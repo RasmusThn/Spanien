@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Meny from './components/Meny';
- import ContactPage from './components/ContactPage';
+import ContactPage from './components/ContactPage';
 // import PicturesPage from './pages/PicturesPage';
 // import CalenderPage from './pages/CalenderPage';
 // import InformationPage from './pages/InformationPage';
