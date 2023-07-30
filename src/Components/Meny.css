@@ -1,0 +1,22 @@
+
+.Menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Menu li {
+    padding: 10px;
+  }
+  
+  .Menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .Menu li a:hover {
+    text-decoration: underline;
+  }
