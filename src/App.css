@@ -1,20 +1,8 @@
-.App {
-  text-align: center;
-}
+/* app.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Styles */
 .App-header {
-  background-color: #4e586e;
+  background-color: #4e586e; /* Lighter header background color */
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -24,24 +12,56 @@
   color: white;
 }
 
+/* Body Styles */
 .App-body {
-    background-color: #e3e7f0; /* Dark background color */
-    min-height: 90vh; /* Fills the remaining viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-top: 2px solid #282c34; */
-  } 
-
-.App-link {
-  color: #61dafb;
+  background-color: #e3e7f0; /* Lighter body background color */
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Optional: Add a border to the body to separate it from the header */
+.App-body {
+  border-top: 2px solid #4e586e; /* Use the same color as the header */
+}
+
+/* Menu Styles */
+.Menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #4e586e; /* Lighter menu background color */
+  padding: 0;
+  margin: 0;
+}
+
+.Menu li {
+  padding: 10px;
+}
+
+.Menu li a {
+  color: #fff1e6; /* Light off-white text color */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase menu text */
+  transition: color 0.2s ease; /* Smooth color transition on hover */
+}
+
+.Menu li a:hover {
+  color: #e3e7f0; /* Lighter link color on hover */
+  text-decoration: underline;
+}
+
+/* Responsive styles for phones */
+@media (max-width: 600px) {
+  .Menu {
+    flex-direction: column; /* Stack the menu items vertically */
+    align-items: center; /* Center align the items */
+    background-color: #282c34; /* Use the same header color for the menu background */
   }
-  to {
-    transform: rotate(360deg);
+
+  .Menu li {
+    padding: 8px 0; /* Reduce the vertical padding */
   }
 }
