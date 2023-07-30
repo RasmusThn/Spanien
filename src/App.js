@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Meny from './Components/Meny.js';
-import HomePage from './pages/HomePage';
- import ContactPage from './pages/ContactPage';
+import HomePage from './components/HomePage';
+import Meny from './components/Meny';
+ import ContactPage from './components/ContactPage';
 // import PicturesPage from './pages/PicturesPage';
 // import CalenderPage from './pages/CalenderPage';
 // import InformationPage from './pages/InformationPage';
