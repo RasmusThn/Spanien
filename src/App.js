@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Meny from './components/Meny';
  import ContactPage from './components/ContactPage';
@@ -24,14 +24,14 @@ function Main(props) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <header className="App-header">
           <Meny /> 
         <Main />
         </header>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
