@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #4e586e;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,15 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.App-body {
+    background-color: #e3e7f0; /* Dark background color */
+    min-height: 90vh; /* Fills the remaining viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: 2px solid #282c34; */
+  } 
 
 .App-link {
   color: #61dafb;
