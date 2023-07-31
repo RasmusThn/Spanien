@@ -6,10 +6,7 @@ function HomePage() {
   return (
     <div >
       
-        <img src={frontImage} className="front-image" alt='imgfront' />
-        <p>
-         Välkommen!
-        </p>
+        <img src={frontImage} className="front-image" alt='imgfront' id='img' />
        
       </div>
   );

@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS for the footer */
+.footer {
+  background-color: #4e586e; /* Background color for the footer */
+  color: #fff; /* Text color */
+  padding: 20px; /* Adjust the padding as needed */
+  text-align: center;
+}
+
+.footer a {
+  color: #fff; /* Link color in the footer */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Optional: Add additional styles to center the footer content */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Add additional styles to create a sticky footer at the bottom of the page */
+/* You can adjust the height and other styles to suit your needs */
+.sticky-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4e586e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
