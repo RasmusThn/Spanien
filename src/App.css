@@ -19,18 +19,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* Optional: Add a border to the body to separate it from the header */
 .App-body {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   border-top: 2px solid #4e586e; /* Use the same color as the header */
 }
 .front-image {
   max-width: 100%; /* Ensure the image doesn't exceed its container's width */
   height: auto; /* Maintain the image's aspect ratio */
   border-radius: 8px; /* Add rounded corners to the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow effect */
   margin-bottom: 20px; /* Add some spacing below the image */
+  
 }
 /* Menu Styles */
 .Menu {
