@@ -3,7 +3,7 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'moment/locale/sv';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-
+import './MyCalendar.css';
 moment.locale('sv')
 const localizer = momentLocalizer(moment);
 
@@ -16,7 +16,7 @@ function MyCalendar() {
       color: 'red',
     },
     {
-      title: 'Lucas kompis',
+      title: 'Lucas kompis?',
       start: new Date('2023-08-03'),
       end: new Date('2023-08-10'),
       color: '#DAA520',//Yellow
@@ -50,7 +50,7 @@ const myMessages = {
 };
   return (
     
-    <div >
+    <div className="my-calendar-container">
       <Calendar
         localizer={localizer}
         events={events}

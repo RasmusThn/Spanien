@@ -1,0 +1,107 @@
+/* BookingForm.css */
+
+/* Container styles */
+div.booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 5vh;
+    border-radius: 2vh;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Heading styles */
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form > div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    max-width: 100%;
+    resize: both; /* Allow vertical resizing of textarea */
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Datepicker styles */
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container {
+    display: flex;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Asterisk for required fields */
+  .required-label::before {
+    content: '*';
+    color: red;
+    margin-right: 5px;
+  }
+  
+  /* Text for Nödvändig = * */
+  .necessary-text {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+  }
+  /* Label on top of textarea */
+.label-on-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  @media (max-width: 768px) {
+    div.booking-form {
+      max-width: 80%; 
+    }}
