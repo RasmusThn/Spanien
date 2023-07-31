@@ -36,6 +36,10 @@
   margin-bottom: 20px; /* Add some spacing below the image */
   
 }
+@media (max-width: 768px) {
+  .front-image {
+    max-width: 80%; 
+  }}
 /* Menu Styles */
 .Menu {
   list-style: none;
@@ -69,8 +73,9 @@
     flex-direction: column; /* Stack the menu items vertically */
     align-items: center; /* Center align the items */
     background-color: #282c34; /* Use the same header color for the menu background */
+    max-width: 80%; 
   }
-
+ 
   .Menu li {
     padding: 8px 0; /* Reduce the vertical padding */
   }
