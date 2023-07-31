@@ -16,10 +16,10 @@ function MyCalendar() {
       color: 'red',
     },
     {
-      title: 'Lucas kompis?',
-      start: new Date('2023-08-03'),
-      end: new Date('2023-08-10'),
-      color: '#DAA520',//Yellow
+      title: 'Linus o Elin',
+      start: new Date('2023-08-02'),
+      end: new Date('2023-08-09'),
+      color: 'red',// #DAA520Yellow
     },
   ];
   
