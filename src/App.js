@@ -29,10 +29,8 @@ function App() {
     
       <div className="App">
         <header className="App-header">
-        <h1>
-         <em>
-          Välkommen!
-          </em>
+        <h1 style={{ fontFamily: "'Dancing Script', cursive" }}>
+          Välkommen
         </h1>
       
           {/* <Meny /> */}

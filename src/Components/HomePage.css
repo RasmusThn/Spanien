@@ -1,0 +1,44 @@
+/* HomePage.css */
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border-radius: 2vh;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .front-image {
+    width: 100%; /* Set a fixed width for all images */
+    height: 100%; /* Set a fixed height for all images */
+    object-fit: cover; /* Scale the image while maintaining aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    
+  }
+  
+  .front-image.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  @media (max-width: 768px) {
+    .slideshow {
+      max-width: 90%; 
+      margin: 0 auto;
+    }}
+  
+  /* .front-image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px;
+    
+  } */
