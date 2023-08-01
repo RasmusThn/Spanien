@@ -2,7 +2,7 @@
 
 /* Header Styles */
 .App-header {
-  background-color: #4e586e; /* Lighter header background color */
+  background: linear-gradient(135deg, #3c4a63, #7289ab);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 
 /* Body Styles */
 .App-body {
-  background-color: #e3e7f0; /* Lighter body background color */
+  background: linear-gradient(135deg, #7289ab, #a3afc6);
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -28,18 +28,8 @@
   padding-bottom: 5vh;
   border-top: 2px solid #4e586e; /* Use the same color as the header */
 }
-.front-image {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; /* Maintain the image's aspect ratio */
-  border-radius: 8px; /* Add rounded corners to the image */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow effect */
-  margin-bottom: 20px; /* Add some spacing below the image */
-  
-}
-@media (max-width: 768px) {
-  .front-image {
-    max-width: 80%; 
-  }}
+
+
 /* Menu Styles */
 .Menu {
   list-style: none;
