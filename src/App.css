@@ -28,7 +28,9 @@
   padding-bottom: 5vh;
   border-top: 2px solid #4e586e; /* Use the same color as the header */
 }
-
+.todo-list-container {
+  position: relative;
+}
 
 /* Menu Styles */
 .Menu {

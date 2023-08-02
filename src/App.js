@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 //import { firestore } from './components/firebase';
 //import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
@@ -27,13 +27,15 @@ import TodoList from './components/TodoList';
 // }
 
 function App() {
+
+  const [isAdminMode, setIsAdminMode] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
         <h1 style={{ fontFamily: "'Dancing Script', cursive" }}>
           Välkommen
         </h1>
-        {/* <Meny /> */}
       </header>
       <div className='App-body'>
         <div>
@@ -49,13 +51,20 @@ function App() {
             <BookingForm />
           </div>
         
-        <div className="row"> {/* Add a new row */}
-          <div className='column'> {/* Wrap each TodoList in a column */}
-            <TodoList collectionName="Inköp"/>
+        <div className="row"> 
+          <div className='column'> 
+          <div className="todo-list-container">
+            <TodoList collectionName="Inköp" isAdminMode={isAdminMode}/>
           </div>
-          <div className='column'> {/* Wrap each TodoList in a column */}
-            <TodoList collectionName="Att Göra"/>
           </div>
+          <div className='column'> 
+          <div className="todo-list-container">
+            <TodoList collectionName="Att Göra" isAdminMode={isAdminMode}/>
+          </div>
+          </div>
+          <button onClick={() => setIsAdminMode(!isAdminMode)} className="admin-button">
+          {isAdminMode ? "" : ""}
+        </button>
         </div>
         <div>
   <h1>Länkar</h1>
