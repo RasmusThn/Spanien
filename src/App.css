@@ -56,7 +56,15 @@
   color: #e3e7f0; /* Lighter link color on hover */
   text-decoration: underline;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.column {
+  flex: 1;
+  margin: 10px;
+}
 /* Responsive styles for phones */
 @media (max-width: 600px) {
   .Menu {
@@ -68,5 +76,15 @@
  
   .Menu li {
     padding: 8px 0; /* Reduce the vertical padding */
+  }
+  .row {
+    flex-direction: row; /* Stack the rows vertically on mobile */
+  }
+
+  .row > * {
+    margin-bottom: 10px; /* Add some margin between the stacked rows */
+    max-width: 80%; /* Set a maximum width for each row on mobile */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
