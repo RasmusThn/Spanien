@@ -13,13 +13,13 @@ function MyCalendar() {
       title: 'Lucas m familj, Patrik o Lina',
       start: new Date('2023-09-08'),
       end: new Date('2023-09-19'),
-      color: 'red',
+      color: '#900000',
     },
     {
       title: 'Linus o Elin',
       start: new Date('2023-08-02'),
       end: new Date('2023-08-09'),
-      color: 'red',// #DAA520Yellow
+      color: '#900000',// 
     },
   ];
   

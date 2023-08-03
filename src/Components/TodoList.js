@@ -96,7 +96,7 @@ const TodoList = ({ collectionName, isAdminMode }) => {
 
   return (
     <div className={`todo-list ${isAdminMode ? 'isAdminMode' : ''}`}>
-      <h3 className="heading">{collectionName}</h3>
+      <h2 style={{ fontFamily: "'Dancing Script', cursive" }} className="heading">{collectionName}</h2>
       <hr/>
       <div className="pagination">
         <button onClick={handlePrevPage} disabled={currentPage === 1}>

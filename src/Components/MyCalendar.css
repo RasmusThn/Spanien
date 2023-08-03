@@ -3,34 +3,30 @@
 /* Container styles */
 div.my-calendar-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin:auto;
+    margin-top: 10vh;
     padding: 20px;
-    border: 1px solid #ddd;
-    margin-top: 5vh;
-    border-radius: 2vh;
+    margin-bottom: 16.5vh;
+    border: 1px solid #0c0c0c;
+    border-radius: 3vh;
     background-color: #e3ebf5;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   }
   
-  /* Heading styles */
-  h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
   
   /* Calendar styles */
   .rbc-calendar {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
   }
   
   .rbc-header {
-    background-color: #f0f0f0;
+    background-color: #ccd182;
     border: 1px solid #ddd;
   }
   
   .rbc-today {
-    background-color: #f9fafc;
+    background-color: #6586c4;
   }
   
   .rbc-toolbar-label {
@@ -38,8 +34,6 @@ div.my-calendar-container {
     font-weight: bold;
     color: #333;
   }
-  
-
   
   .rbc-event {
     background-color: #007bff;
