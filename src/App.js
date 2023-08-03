@@ -3,7 +3,7 @@ import HomePage from './components/HomePage';
 import MyCalendar from './components/MyCalendar';
 import BookingForm from './components/BookingForm';
 import TodoList from './components/TodoList';
-import './App.css';
+import '././styles/App.css';
 
 function App() {
   const [isAdminMode, setIsAdminMode] = useState(false);

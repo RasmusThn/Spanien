@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './BookingForm.css';
+import './../styles/BookingForm.css';
 import { registerLocale, setDefaultLocale } from 'react-datepicker';
 import sv from 'date-fns/locale/sv'; // Import the Swedish locale
 import { useForm } from '@formspree/react';
@@ -48,8 +48,7 @@ if(state.succeeded ){
 }
   return (
     <div className="booking-form">
-      <h3>Skicka Förfrågan:</h3>
-      {/* {formSubmitted && <div className="success-message">Tack! Din förfrågan har skickats.</div>} */}
+      <h3>Skicka Förfrågan</h3>
       <div className="necessary-text">* Nödvändig</div>
       <form action="https://formspree.io/f/xvojzazv" method="POST" >
         <div>
@@ -130,7 +129,7 @@ if(state.succeeded ){
           />
         </div>
         {dateError && <div className="error-message">{dateError}</div>}
-        <button type="submit" disabled={state.submitting}>Skicka Bokning</button>
+        <button type="submit" disabled={state.submitting}>Skicka</button>
       </form>
     </div>
   );
