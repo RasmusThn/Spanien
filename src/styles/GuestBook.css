@@ -1,0 +1,187 @@
+/* GuestBook.css */
+
+/* Container styles */
+div.guestbook-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    border-radius: 2vh;
+    background-color: #e3ebf5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Heading styles */
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements horizontally */
+  justify-content: center; 
+  
+  }
+  
+  form > div {
+    margin-bottom: 10px;
+    
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    
+  }
+  .input-field{
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    max-width: 85%;
+    resize: both; /* Allow vertical resizing of textarea */
+  }
+  .star-rating {
+    display: inline-block;
+    font-size: 24px;
+  }
+  
+  .star {
+    cursor: pointer;
+  }
+  
+  /* Filled star style */
+  .star.filled {
+    color: gold; /* Change to your desired gold color */
+  }
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for individual guestbook entries */
+.guestbook-entries {
+    margin-top: 20px;
+  }
+  
+  .guestbook-entry {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border-radius: 2vh;
+    background-color: #e3ebf5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .guestbook-content {
+    display: grid;
+    grid-template-areas:
+      'rating'
+      'fromdate'
+      'todate'
+      'log'
+      'name';
+    grid-gap: 5px;
+    padding: 10px;
+  }
+  
+  .guestbook-content p {
+    margin: 0;
+  }
+  
+  .guestbook-content p.rating {
+    grid-area: rating;
+    text-align: center;
+  }
+  
+  .guestbook-content p.name {
+    grid-area: name;
+    text-align: right;
+  }
+  
+  .guestbook-content p.fromdate {
+    grid-area: rating;
+    text-align: left;
+  }
+  
+  .guestbook-content p.todate {
+    grid-area: rating;
+    text-align: right;
+  }
+  
+  .guestbook-content p.log {
+    grid-area: log;
+    text-align: center;
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Asterisk for required fields */
+  .required-label::before {
+    content: '*';
+    color: red;
+    margin-right: 5px;
+  }
+  
+  /* Text for Nödvändig = * */
+  .necessary-text {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+  }
+  
+  /* Label on top of textarea */
+  .label-on-top {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    div.guestbook-container {
+      max-width: 80%;
+    }
+    .guestbook-entry {
+        max-width: 80%;
+    }
+  }
+  
