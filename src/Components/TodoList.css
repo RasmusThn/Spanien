@@ -5,7 +5,7 @@ div.todo-list {
   position: relative; 
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ddd;
   margin-top: 5vh;
   border-radius: 2vh;
@@ -19,6 +19,7 @@ div.todo-list {
   h3 {
     text-align: center;
     margin-bottom: 20px;
+    
   }
   
   /* List styles */
@@ -27,22 +28,13 @@ div.todo-list {
     padding: 0;
   }
   
-  li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  padding: 8px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
 li.item{
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: left;
   font-weight: bold;
-  padding: 8px;
+  padding: 5px;
   border-radius: 3px;
   margin-bottom: 10px;
 }
@@ -52,7 +44,7 @@ li.item.admin-mode {
 }
   /* Center the label text */
 li label {
-    flex-grow: 1; /* Allow the label to take up available space and center it */
+    flex-grow: 1; 
     text-align: left; /* Center the text within the label */
     margin: 0 10px; 
   }
@@ -73,13 +65,13 @@ li label {
   input {
     padding: 8px;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 10px;
   }
   
   textarea {
     padding: 8px;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 10px;
     max-width: 100%;
     resize: both; /* Allow vertical resizing of textarea */
   }
@@ -190,7 +182,7 @@ li label {
     
     /* You can also make specific elements smaller */
     .todo-list .heading {
-      font-size: 18px; /* Adjust the font size for the heading */
+      font-size: 18px; 
     }
     
     .todo-list .list label {

@@ -17,30 +17,10 @@ const BookingForm = ({ selectedDates }) => {
   const [toDate, setToDate] = useState(null);
   const [dateError, setDateError] = useState('');
   const [notes, setNotes] = useState('');
- // const [formSubmitted, setFormSubmitted] = useState(false);
   const today = new Date(); // Get the current date
   const [state] = useForm('xvojzazv');
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
 
-//     if (fromDate && toDate && fromDate > toDate) {
-//       setDateError('Från datum kan inte vara senare än till datum');
-//       return; // Prevent form submission
-//     } else {
-//       setDateError('');
-//     }
-
-//     // Reset the form after submission
-//     setName('');
-//     setEmail('');
-//     setPhone('');
-//     setFromDate(null);
-//     setToDate(null);
-//     setNotes('');
-
-//     setFormSubmitted(true);
-//   };
 
   const handleFromDateChange = (date) => {
     setFromDate(date);

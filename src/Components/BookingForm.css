@@ -6,7 +6,8 @@ div.booking-form {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
     border-radius: 2vh;
     background-color: #e3ebf5;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
