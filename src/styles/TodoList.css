@@ -47,6 +47,7 @@ li label {
     flex-grow: 1; 
     text-align: left; /* Center the text within the label */
     margin: 0 10px; 
+    display: flex;
   }
   /* Form styles */
   form {

@@ -4,6 +4,7 @@ import MyCalendar from './components/MyCalendar';
 import BookingForm from './components/BookingForm';
 import TodoList from './components/TodoList';
 import '././styles/App.css';
+import GuestBook from './components/GuestBook';
 
 function App() {
   const [isAdminMode, setIsAdminMode] = useState(false);
@@ -22,12 +23,7 @@ function App() {
       case 'booking':
         return <BookingForm />;
         case 'guestbook':
-        return(
-          <div className='column'>
-
-          <p>Kommande </p>
-          </div>
-          ); 
+        return<GuestBook/>; 
           
       case 'todo':
         return(
@@ -63,7 +59,7 @@ function App() {
           className={selectedMenu === 'home' ? 'active' : ''}
           onClick={() => handleMenuClick('home')}
         >
-          Home
+          Hem
         </button>
         <button
           className={selectedMenu === 'calendar' ? 'active' : ''}
