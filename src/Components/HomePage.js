@@ -3,7 +3,7 @@ import frontImage from '../images/front.jpg';
 import rosorImage from '../images/rosor.jpg';
 import tennisImage from '../images/tennisbana.jpg';
 import poolImage from '../images/poolen.jpg';
-import './HomePage.css';
+import './../styles/HomePage.css';
 
 const images = [frontImage, rosorImage, tennisImage, poolImage];
 const intervalDuration = 3000; // Time in milliseconds for each slide

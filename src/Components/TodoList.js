@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import db from './firebase';
+import db from './../services/firebase';
 import { collection, onSnapshot, addDoc, doc, updateDoc, deleteDoc } from 'firebase/firestore';
-import './TodoList.css';
+import './../styles/TodoList.css';
 
 const TodoList = ({ collectionName, isAdminMode }) => {
   const [tasks, setTasks] = useState([]);
