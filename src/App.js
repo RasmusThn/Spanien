@@ -19,7 +19,7 @@ function App() {
       case 'home':
         return <HomePage />;
       case 'calendar':
-        return <MyCalendar />;
+        return <MyCalendar isAdminMode={isAdminMode} />;
       case 'booking':
         return <BookingForm />;
         case 'guestbook':

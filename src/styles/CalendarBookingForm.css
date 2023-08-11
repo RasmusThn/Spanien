@@ -1,7 +1,7 @@
-/* BookingForm.css */
+/* CalendarBookingForm.css */
 
 /* Container styles */
-div.booking-form {
+div.calendar-booking-form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -14,7 +14,7 @@ div.booking-form {
   }
   
   /* Heading styles */
-  h3 {
+  h2.heading {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -43,11 +43,8 @@ div.booking-form {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 3px;
-    margin: auto;
-    resize: both; /* Allow vertical resizing of textarea */
-   width: 40vh;
-   height: 20vh;
-    max-width: 70%;
+    max-width: 100%;
+    resize: both;
   }
   
   button {
@@ -63,7 +60,20 @@ div.booking-form {
   button:hover {
     background-color: #0056b3;
   }
+  .delete-button {
+    padding: 10px;
+    background-color: #900000; /* Red color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+  }
   
+  .delete-button:hover {
+    background-color: #cc0000; /* Darker shade of red on hover */
+  }
   /* Datepicker styles */
   .react-datepicker-wrapper,
   .react-datepicker__input-container {
@@ -95,17 +105,22 @@ div.booking-form {
     color: #777;
     font-size: 12px;
   }
+  
   /* Label on top of textarea */
-.label-on-top {
+  .label-on-top {
     display: flex;
     flex-direction: column;
   }
+  
   .success-message {
     color: green;
     font-size: 14px;
     margin-top: 5px;
   }
+  
   @media (max-width: 768px) {
-    div.booking-form {
-      max-width: 80%; 
-    }}
+    div.calendar-booking-form {
+      max-width: 80%;
+    }
+  }
+  
