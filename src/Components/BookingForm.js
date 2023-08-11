@@ -53,7 +53,8 @@ if(state.succeeded ){
       <form action="https://formspree.io/f/xvojzazv" method="POST" >
         <div>
           <label htmlFor="name" className={name ? '' : 'required-label'}>
-            Namn:
+            Namn
+            <br/>
           </label>
           <input
             type="text"
@@ -66,7 +67,8 @@ if(state.succeeded ){
         </div>
         <div>
           <label htmlFor="email" className={email ? '' : 'required-label'}>
-            E-post:
+            E-post
+            <br/>
           </label>
           <input
             type="email"
@@ -79,7 +81,8 @@ if(state.succeeded ){
         </div>
         <div>
           <label htmlFor="phone" className={phone ? '' : 'required-label'}>
-            Telefon:
+            Telefon
+            <br/>
           </label>
           <input
             type="tel"
@@ -92,7 +95,7 @@ if(state.succeeded ){
         </div>
         <div>
           <label htmlFor="fromDate" className={fromDate ? '' : 'required-label'}>
-            Från Datum:
+            Från datum
           </label>
           <DatePicker
             id="fromDate"
@@ -106,7 +109,7 @@ if(state.succeeded ){
         </div>
         <div>
           <label htmlFor="toDate" className={toDate ? '' : 'required-label'}>
-            Till Datum:
+            Till datum
           </label>
           <DatePicker
             id="toDate"
