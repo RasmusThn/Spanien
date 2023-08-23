@@ -4,7 +4,7 @@ import moment from 'moment';
 import 'moment/locale/sv';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import './../styles/MyCalendar.css';
-import db from './../services/firebase';
+import db from '../services/firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
 import CalendarBookingForm from './CalendarBookingForm';
 

@@ -3,8 +3,9 @@ import HomePage from './components/HomePage';
 import MyCalendar from './components/MyCalendar';
 import BookingForm from './components/BookingForm';
 import TodoList from './components/TodoList';
-import '././styles/App.css';
+import InformationPage from './components/InformationPage';
 import GuestBook from './components/GuestBook';
+import '././styles/App.css';
 
 function App() {
   const [isAdminMode, setIsAdminMode] = useState(false);
@@ -24,7 +25,8 @@ function App() {
         return <BookingForm />;
         case 'guestbook':
         return<GuestBook/>; 
-          
+      case 'info' :
+        return<InformationPage/>    
       case 'todo':
         return(
           <>
@@ -79,10 +81,13 @@ function App() {
         >
           Gästbok
         </button>
+        <button className={selectedMenu === 'info' ? 'active' :''}
+        onClick={() => handleMenuClick('info')}>
+          Info
+        </button>
         <button
           className={selectedMenu === 'todo' ? 'active' : ''}
-          onClick={() => handleMenuClick('todo')}
-        >
+          onClick={() => handleMenuClick('todo')}>
           Att Göra
         </button>
       </div>
