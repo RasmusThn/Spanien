@@ -4,7 +4,7 @@ import moment from 'moment';
 import 'moment/locale/sv';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import './../styles/MyCalendar.css';
-import db from './../services/firebase';
+import db from '../services/firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
 import CalendarBookingForm from './CalendarBookingForm';
 
@@ -29,11 +29,47 @@ function MyCalendar({ isAdminMode }) {
           color: eventData.booked ? '#900000' : '#FFC107',
         });
       });
-      setEvents(fetchedEvents);
+
+      // Generera återkommande händelser
+      const recurringEvents = generateRecurringEvents();
+      const allEvents = [...fetchedEvents, ...recurringEvents];
+      setEvents(allEvents);
     });
 
     return () => unsubscribe();
   }, []);
+
+  const generateRecurringEvents = () => {
+    const recurringEvents = [];
+    const startOfYear = moment().startOf('year');
+  
+    for (let week = 0; week < 52; week++) {
+      const startOfWeek = startOfYear.clone().add(week, 'weeks');
+      
+    // Add event for Thursday at 9:00 AM
+    const thursdayEvent = startOfWeek.clone().day(4).hour(9);
+    recurringEvents.push({
+      title: 'Marknad, Gran Alacant',
+      start: thursdayEvent.toDate(),
+      end: thursdayEvent.clone().add(5, 'hours').toDate(), // 5 hours duration
+      color: '#00BFFF',
+      href: 'https://goo.gl/maps/8vpwyjcQsNHxaToF7',
+    });
+  
+    // Add event for Sunday at 9:00 AM
+    const sundayEvent = startOfWeek.clone().day(7).hour(9);
+    recurringEvents.push({
+      title: 'Marknad, Gran Alacant',
+      start: sundayEvent.toDate(),
+      end: sundayEvent.clone().add(5, 'hours').toDate(), // 5 hours duration
+      color: '#00BFFF',
+      href: 'https://goo.gl/maps/8vpwyjcQsNHxaToF7',
+    });
+  }
+
+  return recurringEvents;
+};
+  
 
   const eventStyleGetter = (event, start, end, isSelected) => {
     let style = {};
@@ -44,6 +80,7 @@ function MyCalendar({ isAdminMode }) {
 
     return {
       style: style,
+      href: event.url,
     };
   };
   const handleEventClick = (event) => {
@@ -63,7 +100,14 @@ function MyCalendar({ isAdminMode }) {
     time: 'Tid',
     event: 'Händelse',
   };
-
+  const CustomEvent = ({ event }) => (
+    <div>
+      <a href={event.href} target="_blank" rel="noopener noreferrer">
+        {event.title}
+      </a>
+    </div>
+  );
+  
   return (
     <div>
 
@@ -77,6 +121,9 @@ function MyCalendar({ isAdminMode }) {
         eventPropGetter={eventStyleGetter}
         style={{ height: 500 }}
         messages={myMessages}
+        components={{
+          event: CustomEvent,
+        }}
         />
       <div className="legend">
         <div className="legend-item">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { addDoc, collection,doc,updateDoc, deleteDoc } from 'firebase/firestore';
-import db from './../services/firebase';
+import db from '../services/firebase';
 import DateTimePicker  from 'react-datepicker';
 import '../styles/CalendarBookingForm.css';
 

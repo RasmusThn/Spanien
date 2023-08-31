@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import db from './../services/firebase';
+import db from '../services/firebase';
 import { collection, onSnapshot, addDoc, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import './../styles/TodoList.css';
 
